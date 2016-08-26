@@ -95,15 +95,15 @@ void draw() {
      //hitEnemy(); //do not need this 
      image(fighter, fighterPosition_x, fighterPosition_y);
      
-     //hp
-     image(hp, 0 ,0);
-     
      //blood+treasure
      fill(255, 0, 0);
      getTreasure();
      calculateBlood();
      rect(10, 5, bloodWidth, 20 );
      image(treasure, treasurePosition_x, treasurePosition_y);
+     
+     //hp
+     image(hp, 0 ,0);
      
      //game over
      if(blood <= 0)
