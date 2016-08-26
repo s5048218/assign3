@@ -96,10 +96,10 @@ void draw() {
      image(fighter, fighterPosition_x, fighterPosition_y);
      
      //blood+treasure
-     image(treasure, treasurePosition_x, treasurePosition_y);
      fill(255, 0, 0);
      getTreasure();
      calculateBlood();
+     image(treasure, treasurePosition_x, treasurePosition_y);
      rect(10, 5, bloodWidth, 20 );
      
      //hp
